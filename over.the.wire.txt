@@ -1,1 +1,10 @@
 ##Bandit over the wire write up
+
+*level 0*
+ we ssh into bandit0 via the following 
+
+ ssh bandit0@bandit.labs.overthewire.org -p 2220
+ 
+ 
+
+ ![Bandit Level 0 Screenshot](/home/kasika/Pictures/bandit_0.png)
