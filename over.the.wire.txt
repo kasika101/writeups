@@ -5,6 +5,62 @@
 
  ssh bandit0@bandit.labs.overthewire.org -p 2220
  
- 
-
  ![Bandit Level 0 Screenshot](/home/kasika/Pictures/bandit_0.png)
+
+we then cat the readme file and the password to bandit1 is given 
+
+FLAG ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+
+*level 1*
+ssh into bandit 1 with the given password
+
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+
+The password for the next level is stored in a file called readme located in the home directory. 
+
+we are to go to the home directory and find a file name readme 
+we access the home directory by 
+[[cd /home]] 
+ after accessing it, we have multiple files inside it 
+ we use the FIND command to find the readme 
+
+ find -name readme
+
+
+ FLAG: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+
+ *level 1*
+  cat ./- 
+  FLAG: 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+  *level 2*
+
+  cat "spaces in this file name"
+
+  FLAG: MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+  *level 3*
+  cd inhere 
+  ls -la 
+  cat ...Hiding-From-You 
+  
+  FLAG: 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+
+  *level 4*
+cd inhere
+ls 
+find -type f | xargs file
+cat ./-file0
+ 
+ FLAG: 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+
+ *level 5*
+find . -type f -size 1033c ! -executable | xargs
+FLAG : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+
+*level 6*
+
