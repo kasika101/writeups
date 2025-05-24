@@ -64,3 +64,46 @@ FLAG : HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 
 *level 6*
 
+find -type f -size 33c -user bandit7 -group bandit6 
+// we find it from the ~ directory so that it looks in all the filrs 
+
+FLAG: morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+*level 7*
+
+cat data.txt | grep millionth 
+
+FLAG: dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+*level 8*
+
+// i tried using the cat command and i didnt get it 
+//checked out for some vids and i got the *SORT COMMAND*
+// the sort command will sort the data.txt in any way 
+
+
+sort data.txt | uniq -c // for count 
+sort data.txt | uniq -u // for the unique one 
+
+FLAG: 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+*level 9*
+
+// we come accross the strings command.
+// this command is used to show a string of human readable 
+//    among characters that are not huma readable
+
+EG : strings data.txt // shows all the non binary words
+
+strings data.txt
+strings data.txt | grep "===="
+
+FLAG: FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+*lelel 10*
+
+base64 -d data.txt
+
+FLAG: dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+"level 10"
